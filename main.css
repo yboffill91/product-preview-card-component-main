@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Karla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Karla:wght@400;700&family=Montserrat:wght@500;700&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkCyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --veryDarkBlue: hsl(212, 21%, 14%);
+  --darkGrayishBlue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+body{
+    background-color: var(--cream);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+h1{
+    font-family: 'Fraunces', serif; 
+    font-size: 32px;
+    font-weight: 700;
+    padding-bottom: 30px;
+}
+h3{
+    color: var(--darkGrayishBlue);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    padding-bottom: 30px;
+}
+p{
+    color: var(--darkGrayishBlue);
+    line-height: 1.5em;
+    padding-bottom: 30px;
+}
+h2 {
+    color: var(--darkCyan);
+    font-family: 'Fraunces', serif; 
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.car{
+    height: 45px;
+    width: 95%;
+    color: var(--white);
+    font-weight: 700;
+    background-color: hsla(158, 36%, 37%,0.5) ;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.car img{
+    height: 15px;
+    object-fit: cover;
+    padding-left: 10px;
+}
+.car:hover{
+    background-color: var(--darkCyan);
+}
+.contenedor{
+    width: 95%;
+    max-width: 568px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin: 15px auto;
+}
+.banner img{
+    border-radius: 15px 0px 0px 15px;
+    height: 450px;
+    object-fit: cover;
+}
+.promo{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    padding: 15px 30px 15px 15px;
+    border-radius: 0px 15px 15px 0;
+}
+.promo div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.tachado{
+    text-decoration: line-through;
+}
+@media screen  and (max-width:578px){
+    .contenedor{
+        flex-direction: column;
+    }
+    .banner img{
+        border-radius: 15px 15px 0px 0px;
+        height: 250px;
+    }
+    .promo{
+        border-radius: 0px 0px 15px 15px;
+    }
+}
